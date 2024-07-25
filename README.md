@@ -1,2 +1,2 @@
-# tinyfarm
-Like tinyhomes, but farms.
+# tinyfarm.io
+Like a tinyhome, but a farm

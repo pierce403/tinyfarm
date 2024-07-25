@@ -1,0 +1,26 @@
+site_name: TinyFarm.io
+
+theme:
+  name: material
+  logo: img/tinyfarm.png
+
+  palette:
+    - scheme: slate
+      primary: 'black'  # This sets the primary color for the dark mode
+      accent: 'deep orange'   # Optionally, set the accent color
+
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: default
+      primary: 'black'  # This sets the primary color for the light mode
+      accent: 'deep orange'   # Optionally, set the accent color
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+extra_css:
+  - 'css/custom-styles.css'
+
+extra_javascript:
+  - 'js/expand-nav.js'
