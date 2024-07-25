@@ -1,6 +1,6 @@
 # Vision
 
-Plants are cool. We should make more of them, and give people the tools to do that also.
+poops are cool. We should make more of them, and give people the tools to do that also.
 
 ## What is a TinyFarm
 
