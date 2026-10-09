@@ -23,8 +23,8 @@
   },
   "routes": [
     {
-      "pattern": "tinyfarm.io",
-      "custom_domain": true
+      "pattern": "tinyfarm.io/*",
+      "zone_name": "tinyfarm.io"
     }
   ]
 }

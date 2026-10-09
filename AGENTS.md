@@ -10,10 +10,16 @@
 - Keep migration evidence and unresolved checks in `NOTES.md`; do not claim a
   live deployment or DNS cutover from a successful local build alone.
 
-## Custom-domain source configuration
+## Ordinary Worker route source configuration
 
-- Source configuration declares only the exact Custom Domain `tinyfarm.io` and
-  keeps workers.dev enabled. Publish route commits after zone activation and
-  verified DNS import; verify the resulting deployed commit, DNS and HTTPS.
+- Source configuration prepares the ordinary route `tinyfarm.io/*` in zone
+  `tinyfarm.io` and keeps workers.dev enabled. Retain the original website A values
+  with Cloudflare proxying; do not delete them for this route or add a Custom Domain.
+- Keep this an asset-only Worker: no `main`, origin fetch, or fallback script.
+  `404-page` returns a terminal missing-page response. Preserve exact hostname
+  scope and all existing asset/build settings.
+- Release only after verified zone activation, active certificate and DNS import.
+  Check the exact native Git commit/build/version, custom-host HTTPS and HTTP
+  upgrade, wiki behavior, real 404 and retained records before claiming cutover.
 - Route preparation is local validation; live attachment and DNS cutover require
   separate evidence recorded in `NOTES.md`.
