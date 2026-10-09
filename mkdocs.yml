@@ -1,4 +1,5 @@
 site_name: TinyFarm.io
+site_url: https://tinyfarm.io/
 
 theme:
   name: material
